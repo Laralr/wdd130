@@ -10,8 +10,9 @@ header {
     font-family: "Playfair Display", serif;
 	display: grid;
 	grid-template-columns: 150px auto;
-	grid-gap: 1rem;
+	grid-gap: 7rem;
 	padding: 1rem;
+	background-color: var(--accent1-color);
 }
 header img {
 	width: 150px;
@@ -21,14 +22,16 @@ header img {
 header nav {
 	display: flex;
 	align-items: center;
-	font-size: larger;
+	font-size: center;
 	justify-content: center;
+	background-color: var(--accent1-color);
 }
-nav a {
-	background-color: #aed8df;
-	padding: 1rem 2rem;
+header nav a {
+	background-color: var(--accent2-color);
+	padding: 1rem 3rem;
+	border: 1px solid rgba(0,0,0,.3);
 }
-a {
+header a {
 	text-decoration: none;
 }
 .hero {
@@ -44,7 +47,6 @@ a {
 	font-size: 30pt;
 	color: #4A9381;
 	background-color: rgba(255, 255, 255, 0.591)
-
 }
 .hero img {
     display: block;
@@ -54,6 +56,10 @@ a {
 .hero article img {
 	float: right;
 	width: 200px;
+}
+section {
+	display: flex;
+	flex: 3;
 }
 body {
     font-family: "Fredoka", sans-serif;
@@ -73,10 +79,48 @@ body {
 	right: 0px;
 	left: 0px;
 	font-size: 12pt;
-	top: 12rem;
+	top: 18rem;
 }
 h2 {
 	font-family: "Playfair Display", serif;
 	color: #4698CA;
 	font-size: 24pt;
+	text-align: center;
+}
+figure {
+	border: thin #c0c0c0 solid;
+	display: flex;
+	flex-flow: column;
+	padding: 1px;
+	max-width: 400px;
+	margin: auto;
+  }
+figcaption {
+	background-color: #222;
+	color: var(--accent2-color);
+	font: var(--text-font);
+	padding: 3px;
+	text-align: center;
+  }
+.container {
+	display: flex;
+	justify-content: center;
+}
+.container img {
+	width: 235px;
+	height: 150px;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 1rem;
+	padding: 1rem;
+	background-color: var(--accent1-color);
+	color: #000;
+}
+footer nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
